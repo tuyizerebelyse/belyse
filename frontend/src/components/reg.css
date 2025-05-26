@@ -1,0 +1,166 @@
+
+.register {
+  height: 100vh;
+text-align: center;
+margin-left: 350px;
+margin-top: 80px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Form container */
+.login{
+background-color: rgba(211, 237, 239, 0.963);
+height: 50vh;
+width:50vh;
+margin-left: 350px;
+text-align: center;
+font-family:'algebric';
+border-radius:15px  ;
+padding:40px;
+}
+
+.login input[type='submit']:hover {
+  background-color: #005edb;
+  transition:0.3sec
+}
+.container {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Input fields and labels */
+.container label {
+  font-weight: 600;
+  color: #333;
+}
+
+.container input[type='text'],
+.container input[type='password'] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.container input:focus {
+  border-color: #0072ff;
+  outline: none;
+}
+
+/* Submit button */
+.container input[type='submit'] {
+  width: 100%;
+  padding: 12px;
+  background-color: #0072ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container input[type='submit']:hover {
+  background-color: #005edb;
+}
+form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h5 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+input[type='number'],
+input[type='text'],
+input[type='submit'] {
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+input[type='submit'] {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type='submit']:hover {
+  background-color: #45a049;
+}
+
+form {
+  max-width: 300px;
+  margin: -20px auto;
+  padding: 25px;
+  background-color: #f4f8fb;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  
+  
+}
+
+h4 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='date'],
+select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+select {
+  background-color: #fff;
+}
+
+input[type='submit'] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type='submit']:hover {
+  background-color: #0056b3;
+}
