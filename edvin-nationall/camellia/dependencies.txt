@@ -1,0 +1,66 @@
+Backend dependencies***
+-nodemon
+-mysql2
+-express-session
+-express
+-dotenv
+-cors
+-bcrypt
+
+Front end dependencies***
+-axios
+-framer-motion
+-react
+-react-dom
+-react-icons
+-react-router-dom
+-recharts
+-react-scripts
+-web-vitals
+
+DATABASE*****
+
+-- 1. Create the database
+CREATE DATABASE IF NOT EXISTS camellia;
+USE camellia;
+
+-- 2. Create `users` table
+CREATE TABLE users (
+    UserID INT(11) NOT NULL AUTO_INCREMENT,
+    UserName VARCHAR(50) NOT NULL,
+    Password VARCHAR(255) NOT NULL,
+    PRIMARY KEY (UserID)
+);
+
+-- 3. Create `post` table
+CREATE TABLE post (
+    PostID INT(11) NOT NULL AUTO_INCREMENT,
+    PostName VARCHAR(100) NOT NULL,
+    PRIMARY KEY (PostID)
+);
+
+-- 4. Create `candidate` table
+CREATE TABLE candidate (
+    CandidateNationalId VARCHAR(50) NOT NULL,
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL,
+    Gender VARCHAR(10),
+    DataOfficials DATE,
+    PostID INT(11),
+    ExamDate DATE,
+    PhoneNumber VARCHAR(20),
+    Marks DECIMAL(5,2),
+    PRIMARY KEY (CandidateNationalId),
+    FOREIGN KEY (PostID) REFERENCES post(PostID)
+);
+
+-- 5. Create `activitylog` table
+CREATE TABLE activitylog (
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    action VARCHAR(255) NOT NULL,
+    time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    icon VARCHAR(10),
+    userId INT(11),
+    PRIMARY KEY (id),
+    FOREIGN KEY (userId) REFERENCES users(UserID)
+);
